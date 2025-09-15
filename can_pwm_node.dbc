@@ -39,11 +39,21 @@ BU_:
 BO_ 257 state: 1 Vector__XXX
  SG_ system_state : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 513 command_a: 8 Vector__XXX
- SG_ command_u16_0 : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
- SG_ command_u16_1 : 16|16@1+ (1,0) [0|65535] "unit" Vector__XXX
- SG_ command_u16_2 : 32|16@1+ (1,0) [0|65535] "unit" Vector__XXX
- SG_ command_u16_3 : 48|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+BO_ 513 command_servo: 8 Vector__XXX
+ SG_ command_servo_1 : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+ SG_ command_servo_2 : 16|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+ SG_ command_servo_3 : 32|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+ SG_ command_servo_4 : 48|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+
+BO_ 514 command_h_bridge_1: 8 Vector__XXX
+ SG_ command_h_bridge_1_pwm : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+ SG_ command_h_bridge_1_a : 16|1@1+ (1,0) [0|1] "unit" Vector__XXX
+ SG_ command_h_bridge_1_b : 17|1@1+ (1,0) [0|1] "unit" Vector__XXX
+
+BO_ 515 command_h_bridge_2: 8 Vector__XXX
+ SG_ command_h_bridge_2_pwm : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+ SG_ command_h_bridge_2_a : 16|1@1+ (1,0) [0|1] "unit" Vector__XXX
+ SG_ command_h_bridge_2_b : 17|1@1+ (1,0) [0|1] "unit" Vector__XXX
 
 
 
