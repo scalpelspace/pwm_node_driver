@@ -1,6 +1,6 @@
 /*******************************************************************************
  * @file pwm_node_can_driver.c
- * @brief PWM Node driver for CAN based communication.
+ * @brief PWM Node driver for CAN bus based communication.
  *******************************************************************************
  */
 
