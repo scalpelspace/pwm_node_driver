@@ -35,17 +35,17 @@ const can_message_t dbc_messages[] = {
             },
     },
     {
-        .name = "command_servo",
+        .name = "command_servo_1",
         .message_id = 513,
         .id_mask = 0xFFFFFFFF,
-        .dlc = 8,
+        .dlc = 2,
         .rx_handler = 0,
         .tx_handler = 0,
-        .signal_count = 4,
+        .signal_count = 1,
         .signals =
             {
                 {
-                    .name = "command_servo_1",
+                    .name = "command_servo_1_pmw",
                     .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
@@ -55,9 +55,21 @@ const can_message_t dbc_messages[] = {
                     .min_value = 0.0f,
                     .max_value = 65535.0f,
                 },
+            },
+    },
+    {
+        .name = "command_servo_2",
+        .message_id = 514,
+        .id_mask = 0xFFFFFFFF,
+        .dlc = 2,
+        .rx_handler = 0,
+        .tx_handler = 0,
+        .signal_count = 1,
+        .signals =
+            {
                 {
-                    .name = "command_servo_2",
-                    .start_bit = 16,
+                    .name = "command_servo_2_pmw",
+                    .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
                     .is_signed = false,
@@ -66,9 +78,21 @@ const can_message_t dbc_messages[] = {
                     .min_value = 0.0f,
                     .max_value = 65535.0f,
                 },
+            },
+    },
+    {
+        .name = "command_servo_3",
+        .message_id = 515,
+        .id_mask = 0xFFFFFFFF,
+        .dlc = 2,
+        .rx_handler = 0,
+        .tx_handler = 0,
+        .signal_count = 1,
+        .signals =
+            {
                 {
-                    .name = "command_servo_3",
-                    .start_bit = 32,
+                    .name = "command_servo_3_pmw",
+                    .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
                     .is_signed = false,
@@ -77,9 +101,21 @@ const can_message_t dbc_messages[] = {
                     .min_value = 0.0f,
                     .max_value = 65535.0f,
                 },
+            },
+    },
+    {
+        .name = "command_servo_4",
+        .message_id = 516,
+        .id_mask = 0xFFFFFFFF,
+        .dlc = 2,
+        .rx_handler = 0,
+        .tx_handler = 0,
+        .signal_count = 1,
+        .signals =
+            {
                 {
-                    .name = "command_servo_4",
-                    .start_bit = 48,
+                    .name = "command_servo_4_pmw",
+                    .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
                     .is_signed = false,
@@ -92,9 +128,9 @@ const can_message_t dbc_messages[] = {
     },
     {
         .name = "command_h_bridge_1",
-        .message_id = 514,
+        .message_id = 517,
         .id_mask = 0xFFFFFFFF,
-        .dlc = 8,
+        .dlc = 3,
         .rx_handler = 0,
         .tx_handler = 0,
         .signal_count = 3,
@@ -137,9 +173,9 @@ const can_message_t dbc_messages[] = {
     },
     {
         .name = "command_h_bridge_2",
-        .message_id = 515,
+        .message_id = 518,
         .id_mask = 0xFFFFFFFF,
-        .dlc = 8,
+        .dlc = 3,
         .rx_handler = 0,
         .tx_handler = 0,
         .signal_count = 3,
