@@ -16,8 +16,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 257,
         .id_mask = 0xFFFFFFFF,
         .dlc = 1,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 1,
         .signals =
             {
@@ -39,8 +39,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 513,
         .id_mask = 0xFFFFFFFF,
         .dlc = 2,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 1,
         .signals =
             {
@@ -62,8 +62,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 514,
         .id_mask = 0xFFFFFFFF,
         .dlc = 2,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 1,
         .signals =
             {
@@ -85,8 +85,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 515,
         .id_mask = 0xFFFFFFFF,
         .dlc = 2,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 1,
         .signals =
             {
@@ -108,8 +108,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 516,
         .id_mask = 0xFFFFFFFF,
         .dlc = 2,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 1,
         .signals =
             {
@@ -131,8 +131,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 517,
         .id_mask = 0xFFFFFFFF,
         .dlc = 3,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 3,
         .signals =
             {
@@ -176,8 +176,8 @@ const can_message_t dbc_messages[] = {
         .message_id = 518,
         .id_mask = 0xFFFFFFFF,
         .dlc = 3,
-        .rx_handler = 0,
-        .tx_handler = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
         .signal_count = 3,
         .signals =
             {
