@@ -22,7 +22,7 @@ Low level communication drivers for the PWM Node dev board running the [
 
 ## 1 Overview
 
-The Momentum dev board provides 2 direct communication interfaces:
+The PWM Node dev board provides 2 direct communication interfaces:
 
 1. UART
 2. CAN (classic)
