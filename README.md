@@ -13,7 +13,7 @@ Low level communication drivers for the PWM Node dev board running the [
 <!-- TOC -->
 * [pwm_node_driver](#pwm_node_driver)
   * [1 Overview](#1-overview)
-  * [3 CAN Bus Drivers](#3-can-bus-drivers)
+  * [2 CAN Bus Drivers](#2-can-bus-drivers)
 <!-- TOC -->
 
 </details>
@@ -35,7 +35,7 @@ simple implementation.
 
 ---
 
-## 3 CAN Bus Drivers
+## 2 CAN Bus Drivers
 
 CAN drivers are implemented via the [
 `can_driver`](https://github.com/scalpelspace/can_driver) submodule.
