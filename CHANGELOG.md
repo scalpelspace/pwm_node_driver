@@ -25,3 +25,6 @@
 
 - **Modifications:**
     - Improve docs.
+- **Deletions:**
+    - Remove outdated script that was previously relocated to `can_driver`
+      submodule.
