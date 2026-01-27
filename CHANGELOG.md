@@ -15,7 +15,7 @@
 
 ---
 
-## [v0.1.0 (2025-01-13)](https://github.com/scalpelspace/momentum_driver/releases/tag/v0.1.0)
+## [v0.1.0 (2025-01-13)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.1.0)
 
 - Initial release.
 
@@ -25,6 +25,7 @@
 
 - **Modifications:**
     - Improve docs.
+    - Fix bad link in `CHANGELOG.md` for `v0.1.0`.
 - **Deletions:**
     - Remove outdated script that was previously relocated to `can_driver`
       submodule.
