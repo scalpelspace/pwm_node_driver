@@ -36,34 +36,24 @@ BS_:
 BU_:
 
 
-BO_ 257 state: 1 Vector__XXX
+BO_ 32 state: 1 Vector__XXX
  SG_ system_state : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 513 command_servo_1: 2 Vector__XXX
- SG_ command_servo_1_pmw : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+BO_ 64 command_servo_1: 2 Vector__XXX
+ SG_ command_servo_1_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
 
-BO_ 514 command_servo_2: 2 Vector__XXX
- SG_ command_servo_2_pmw : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+BO_ 96 command_servo_2: 2 Vector__XXX
+ SG_ command_servo_2_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
 
-BO_ 515 command_servo_3: 2 Vector__XXX
- SG_ command_servo_3_pmw : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
+BO_ 128 command_servo_3: 2 Vector__XXX
+ SG_ command_servo_3_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
 
-BO_ 516 command_servo_4: 2 Vector__XXX
- SG_ command_servo_4_pmw : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
-
-BO_ 517 command_h_bridge_1: 3 Vector__XXX
- SG_ command_h_bridge_1_pwm : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
- SG_ command_h_bridge_1_a : 16|1@1+ (1,0) [0|1] "unit" Vector__XXX
- SG_ command_h_bridge_1_b : 17|1@1+ (1,0) [0|1] "unit" Vector__XXX
-
-BO_ 518 command_h_bridge_2: 3 Vector__XXX
- SG_ command_h_bridge_2_pwm : 0|16@1+ (1,0) [0|65535] "unit" Vector__XXX
- SG_ command_h_bridge_2_a : 16|1@1+ (1,0) [0|1] "unit" Vector__XXX
- SG_ command_h_bridge_2_b : 17|1@1+ (1,0) [0|1] "unit" Vector__XXX
+BO_ 160 command_servo_4: 2 Vector__XXX
+ SG_ command_servo_4_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
 
 
 
-CM_ BO_ 257 "State machine info";
+CM_ BO_ 32 "State machine info";
 BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
