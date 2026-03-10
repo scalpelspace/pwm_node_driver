@@ -58,18 +58,18 @@ BO_ 192 datetime_set: 7 Vector__XXX
  SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" Vector__XXX
  SG_ hours : 32|8@1+ (1,0) [0|23] "hour" Vector__XXX
  SG_ minutes : 40|8@1+ (1,0) [0|59] "min" Vector__XXX
- SG_ seconds : 48|8@1+ (1,0) [0|59] "second" Vector__XXX
+ SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" Vector__XXX
 
 BO_ 224 datetime_get: 0 Vector__XXX
 
 BO_ 256 datetime_get_response: 7 Vector__XXX
- SG_ year : 0|8@1+ (1,0) [0|99] "y" Vector__XXX
- SG_ month : 8|8@1+ (1,0) [1|12] "mon" Vector__XXX
- SG_ date : 16|8@1+ (1,0) [1|31] "d" Vector__XXX
- SG_ weekday : 24|8@1+ (1,0) [1|7] "" Vector__XXX
- SG_ hours : 32|8@1+ (1,0) [0|23] "h" Vector__XXX
+ SG_ year : 0|8@1+ (1,0) [0|99] "year" Vector__XXX
+ SG_ month : 8|8@1+ (1,0) [1|12] "month" Vector__XXX
+ SG_ date : 16|8@1+ (1,0) [1|31] "day" Vector__XXX
+ SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" Vector__XXX
+ SG_ hours : 32|8@1+ (1,0) [0|23] "hour" Vector__XXX
  SG_ minutes : 40|8@1+ (1,0) [0|59] "min" Vector__XXX
- SG_ seconds : 48|8@1+ (1,0) [0|59] "s" Vector__XXX
+ SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" Vector__XXX
 
 
 
