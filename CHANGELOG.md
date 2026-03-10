@@ -8,7 +8,7 @@
 <!-- TOC -->
 * [Changelog](#changelog)
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
-  * [v0.1.1 (TBD)](#v011--tbd-)
+  * [v0.2.1 (TBD)](#v021--tbd-)
 <!-- TOC -->
 
 </details>
@@ -21,11 +21,19 @@
 
 ---
 
-## [v0.1.1 (TBD)]()
+## [v0.2.1 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.2.1)
 
+- **Additions:**
+    - Add RTC and versioning CAN messages.
 - **Modifications:**
     - Improve docs.
     - Fix bad link in `CHANGELOG.md` for `v0.1.0`.
+    - Update `can_driver` submodule `v0.3.0`.
+    - Update [can_pwm_node.dbc](can_pwm_node.dbc) for new auto-generated
+      standard.
+    - Update [can_pwm_node.dbc](can_pwm_node.dbc) for specific transmitter and
+      receiver nodes.
 - **Deletions:**
     - Remove outdated script that was previously relocated to `can_driver`
       submodule.
+    - Remove H-bridge control CAN messages.

@@ -33,43 +33,51 @@ NS_ :
 
 BS_:
 
-BU_:
+BU_: PWM_NODE COMMANDER LISTENER REQUESTER
 
 
-BO_ 32 state: 1 Vector__XXX
- SG_ system_state : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 32 state: 1 PWM_NODE
+ SG_ system_state : 0|8@1+ (1,0) [0|255] "" LISTENER
 
-BO_ 64 command_servo_1: 2 Vector__XXX
- SG_ command_servo_1_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
+BO_ 64 command_servo_1: 2 COMMANDER
+ SG_ command_servo_1_pwm : 0|16@1+ (1,0) [500|2500] "us" PWM_NODE
 
-BO_ 96 command_servo_2: 2 Vector__XXX
- SG_ command_servo_2_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
+BO_ 96 command_servo_2: 2 COMMANDER
+ SG_ command_servo_2_pwm : 0|16@1+ (1,0) [500|2500] "us" PWM_NODE
 
-BO_ 128 command_servo_3: 2 Vector__XXX
- SG_ command_servo_3_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
+BO_ 128 command_servo_3: 2 COMMANDER
+ SG_ command_servo_3_pwm : 0|16@1+ (1,0) [500|2500] "us" PWM_NODE
 
-BO_ 160 command_servo_4: 2 Vector__XXX
- SG_ command_servo_4_pmw : 0|16@1+ (1,0) [500|2500] "us" Vector__XXX
+BO_ 160 command_servo_4: 2 COMMANDER
+ SG_ command_servo_4_pwm : 0|16@1+ (1,0) [500|2500] "us" PWM_NODE
 
-BO_ 192 datetime_set: 7 Vector__XXX
- SG_ year : 0|8@1+ (1,0) [0|99] "year" Vector__XXX
- SG_ month : 8|8@1+ (1,0) [1|12] "month" Vector__XXX
- SG_ date : 16|8@1+ (1,0) [1|31] "day" Vector__XXX
- SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" Vector__XXX
- SG_ hours : 32|8@1+ (1,0) [0|23] "hour" Vector__XXX
- SG_ minutes : 40|8@1+ (1,0) [0|59] "min" Vector__XXX
- SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" Vector__XXX
+BO_ 192 datetime_set: 7 COMMANDER
+ SG_ year : 0|8@1+ (1,0) [0|99] "year" PWM_NODE
+ SG_ month : 8|8@1+ (1,0) [1|12] "month" PWM_NODE
+ SG_ date : 16|8@1+ (1,0) [1|31] "day" PWM_NODE
+ SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" PWM_NODE
+ SG_ hours : 32|8@1+ (1,0) [0|23] "hour" PWM_NODE
+ SG_ minutes : 40|8@1+ (1,0) [0|59] "min" PWM_NODE
+ SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" PWM_NODE
 
-BO_ 224 datetime_get: 0 Vector__XXX
+BO_ 224 datetime_get: 0 REQUESTER
 
-BO_ 256 datetime_get_response: 7 Vector__XXX
- SG_ year : 0|8@1+ (1,0) [0|99] "year" Vector__XXX
- SG_ month : 8|8@1+ (1,0) [1|12] "month" Vector__XXX
- SG_ date : 16|8@1+ (1,0) [1|31] "day" Vector__XXX
- SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" Vector__XXX
- SG_ hours : 32|8@1+ (1,0) [0|23] "hour" Vector__XXX
- SG_ minutes : 40|8@1+ (1,0) [0|59] "min" Vector__XXX
- SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" Vector__XXX
+BO_ 256 datetime_get_response: 7 PWM_NODE
+ SG_ year : 0|8@1+ (1,0) [0|99] "year" REQUESTER
+ SG_ month : 8|8@1+ (1,0) [1|12] "month" REQUESTER
+ SG_ date : 16|8@1+ (1,0) [1|31] "day" REQUESTER
+ SG_ weekday : 24|8@1+ (1,0) [1|7] "weekday" REQUESTER
+ SG_ hours : 32|8@1+ (1,0) [0|23] "hour" REQUESTER
+ SG_ minutes : 40|8@1+ (1,0) [0|59] "min" REQUESTER
+ SG_ seconds : 48|8@1+ (1,0) [0|59] "sec" REQUESTER
+
+BO_ 960 version_get: 0 REQUESTER
+
+BO_ 992 version_get_response: 4 PWM_NODE
+ SG_ version_major : 0|8@1+ (1,0) [0|255] "major" REQUESTER
+ SG_ version_minor : 8|8@1+ (1,0) [0|255] "minor" REQUESTER
+ SG_ version_patch : 16|8@1+ (1,0) [0|255] "patch" REQUESTER
+ SG_ version_identifier : 24|8@1+ (1,0) [0|255] "ascii" REQUESTER
 
 
 

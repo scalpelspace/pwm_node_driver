@@ -45,7 +45,7 @@ const can_message_t dbc_messages[] = {
         .signals =
             {
                 {
-                    .name = "command_servo_1_pmw",
+                    .name = "command_servo_1_pwm",
                     .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
@@ -68,7 +68,7 @@ const can_message_t dbc_messages[] = {
         .signals =
             {
                 {
-                    .name = "command_servo_2_pmw",
+                    .name = "command_servo_2_pwm",
                     .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
@@ -91,7 +91,7 @@ const can_message_t dbc_messages[] = {
         .signals =
             {
                 {
-                    .name = "command_servo_3_pmw",
+                    .name = "command_servo_3_pwm",
                     .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
@@ -114,7 +114,7 @@ const can_message_t dbc_messages[] = {
         .signals =
             {
                 {
-                    .name = "command_servo_4_pmw",
+                    .name = "command_servo_4_pwm",
                     .start_bit = 0,
                     .bit_length = 16,
                     .byte_order = CAN_LITTLE_ENDIAN,
@@ -314,6 +314,75 @@ const can_message_t dbc_messages[] = {
                     .offset = 0.0f,
                     .min_value = 0.0f,
                     .max_value = 59.0f,
+                },
+            },
+    },
+    {
+        .name = "version_get",
+        .message_id = 960,
+        .id_mask = 0xFFFFFFFF,
+        .dlc = 0,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
+        .signal_count = 0,
+        .signals =
+            {
+
+            },
+    },
+    {
+        .name = "version_get_response",
+        .message_id = 992,
+        .id_mask = 0xFFFFFFFF,
+        .dlc = 4,
+        .rx_handler = 0, // (can_rx_handler_t)my_rx_handler_func,
+        .tx_handler = 0, // (can_tx_handler_t)my_tx_handler_func,
+        .signal_count = 4,
+        .signals =
+            {
+                {
+                    .name = "version_major",
+                    .start_bit = 0,
+                    .bit_length = 8,
+                    .byte_order = CAN_LITTLE_ENDIAN,
+                    .is_signed = false,
+                    .scale = 1.0f,
+                    .offset = 0.0f,
+                    .min_value = 0.0f,
+                    .max_value = 255.0f,
+                },
+                {
+                    .name = "version_minor",
+                    .start_bit = 8,
+                    .bit_length = 8,
+                    .byte_order = CAN_LITTLE_ENDIAN,
+                    .is_signed = false,
+                    .scale = 1.0f,
+                    .offset = 0.0f,
+                    .min_value = 0.0f,
+                    .max_value = 255.0f,
+                },
+                {
+                    .name = "version_patch",
+                    .start_bit = 16,
+                    .bit_length = 8,
+                    .byte_order = CAN_LITTLE_ENDIAN,
+                    .is_signed = false,
+                    .scale = 1.0f,
+                    .offset = 0.0f,
+                    .min_value = 0.0f,
+                    .max_value = 255.0f,
+                },
+                {
+                    .name = "version_identifier",
+                    .start_bit = 24,
+                    .bit_length = 8,
+                    .byte_order = CAN_LITTLE_ENDIAN,
+                    .is_signed = false,
+                    .scale = 1.0f,
+                    .offset = 0.0f,
+                    .min_value = 0.0f,
+                    .max_value = 255.0f,
                 },
             },
     },
