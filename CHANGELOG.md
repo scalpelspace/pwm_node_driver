@@ -8,7 +8,7 @@
 <!-- TOC -->
 * [Changelog](#changelog)
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
-  * [v0.2.1 (TBD)](#v021--tbd-)
+  * [v0.2.1 (2026-03-10)](#v021--2026-03-10-)
 <!-- TOC -->
 
 </details>
@@ -21,7 +21,7 @@
 
 ---
 
-## [v0.2.1 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.2.1)
+## [v0.2.1 (2026-03-10)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.2.1)
 
 - **Additions:**
     - Add RTC and versioning CAN messages.
