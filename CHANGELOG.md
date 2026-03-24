@@ -9,6 +9,7 @@
 * [Changelog](#changelog)
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
   * [v0.2.1 (2026-03-10)](#v021--2026-03-10-)
+  * [v0.2.2 (TBD)](#v022--tbd-)
 <!-- TOC -->
 
 </details>
@@ -37,3 +38,11 @@
     - Remove outdated script that was previously relocated to `can_driver`
       submodule.
     - Remove H-bridge control CAN messages.
+
+---
+
+## [v0.2.2 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.2.2)
+
+- **Deletions:**
+    - Remove comment line in [can_pwm_node.dbc](can_pwm_node.dbc) causing DBC
+      merge script issues.
