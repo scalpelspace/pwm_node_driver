@@ -9,7 +9,7 @@
 * [Changelog](#changelog)
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
   * [v0.2.1 (2026-03-10)](#v021--2026-03-10-)
-  * [v0.2.2 (TBD)](#v022--tbd-)
+  * [v0.3.2 (TBD)](#v032--tbd-)
 <!-- TOC -->
 
 </details>
@@ -41,8 +41,10 @@
 
 ---
 
-## [v0.2.2 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.2.2)
+## [v0.3.2 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.3.2)
 
+- **Modifications:**
+    - Update DBC for new current sense design/features.
 - **Deletions:**
     - Remove comment line in [can_pwm_node.dbc](can_pwm_node.dbc) causing DBC
       merge script issues.
