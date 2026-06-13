@@ -46,6 +46,7 @@
 - **Modifications:**
     - Update DBC for new current sense design/features.
     - Update `can_driver` submodule `v0.3.5`.
+    - Update `state` message to include an 8-bit MCU core temperature value.
 - **Deletions:**
     - Remove comment line in [can_pwm_node.dbc](can_pwm_node.dbc) causing DBC
       merge script issues.
