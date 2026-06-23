@@ -41,7 +41,7 @@
 
 ---
 
-## [v0.3.2 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.3.2)
+## [v0.3.2 (2026-06-23)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.3.2)
 
 - **Modifications:**
     - Update DBC for new current sense design/features.
