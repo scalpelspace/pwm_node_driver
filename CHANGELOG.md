@@ -10,6 +10,7 @@
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
   * [v0.2.1 (2026-03-10)](#v021--2026-03-10-)
   * [v0.3.2 (2026-06-23)](#v032--2026-06-23-)
+  * [v0.3.3 (TBD)](#v033--tbd-)
 <!-- TOC -->
 
 </details>
@@ -50,3 +51,10 @@
 - **Deletions:**
     - Remove comment line in [can_pwm_node.dbc](can_pwm_node.dbc) causing DBC
       merge script issues.
+
+---
+
+## [v0.3.3 (TBD)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.3.3)
+
+- **Modifications:**
+    - Restructure servo control messages for revamped control firmware.
