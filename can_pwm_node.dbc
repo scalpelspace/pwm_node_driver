@@ -40,40 +40,17 @@ BO_ 32 state: 2 PWM_NODE
  SG_ system_state : 0|8@1+ (1,0) [0|255] ""  LISTENER
  SG_ mcu_temperature : 8|8@1+ (1,-40) [-40|215] "degC"  LISTENER
 
-BO_ 64 command_servo_1: 6 COMMANDER
- SG_ node_id : 0|8@1+ (1,0) [0|255] ""  PWM_NODE
- SG_ servo_1_control_mode : 8|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_1_enable : 11|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_1_clear_faults : 12|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_1_reserved0 : 13|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_1_target_pwm : 16|16@1+ (1,0) [0|3000] "us"  PWM_NODE
- SG_ servo_1_soft_limit_ma : 32|16@1+ (1,0) [0|65535] "mA"  PWM_NODE
+BO_ 64 command_servo_1: 2 COMMANDER
+ SG_ command_servo_1_pwm : 0|16@1+ (1,0) [500|2500] "us"  PWM_NODE
 
-BO_ 96 command_servo_2: 6 COMMANDER
- SG_ node_id : 0|8@1+ (1,0) [0|255] ""  PWM_NODE
- SG_ servo_2_control_mode : 8|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_2_enable : 11|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_2_clear_faults : 12|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_2_reserved0 : 13|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_2_target_pwm : 16|16@1+ (1,0) [0|3000] "us"  PWM_NODE
- SG_ servo_2_soft_limit_ma : 32|16@1+ (1,0) [0|65535] "mA"  PWM_NODE
+BO_ 96 command_servo_2: 2 COMMANDER
+ SG_ command_servo_2_pwm : 0|16@1+ (1,0) [500|2500] "us"  PWM_NODE
 
-BO_ 128 command_servo_3: 4 COMMANDER
- SG_ node_id : 0|8@1+ (1,0) [0|255] ""  PWM_NODE
- SG_ servo_3_control_mode : 8|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_3_enable : 11|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_3_clear_faults : 12|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_3_reserved0 : 13|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_3_target_pwm : 16|16@1+ (1,0) [0|3000] "us"  PWM_NODE
+BO_ 128 command_servo_3: 2 COMMANDER
+ SG_ command_servo_3_pwm : 0|16@1+ (1,0) [500|2500] "us"  PWM_NODE
 
-BO_ 160 command_servo_4: 6 COMMANDER
- SG_ node_id : 0|8@1+ (1,0) [0|255] ""  PWM_NODE
- SG_ servo_4_control_mode : 8|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_4_enable : 11|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_4_clear_faults : 12|1@1+ (1,0) [0|1] ""  PWM_NODE
- SG_ servo_4_reserved0 : 13|3@1+ (1,0) [0|7] ""  PWM_NODE
- SG_ servo_4_target_pwm : 16|16@1+ (1,0) [0|3000] "us"  PWM_NODE
- SG_ servo_4_soft_limit_ma : 32|16@1+ (1,0) [0|65535] "mA"  PWM_NODE
+BO_ 160 command_servo_4: 2 COMMANDER
+ SG_ command_servo_4_pwm : 0|16@1+ (1,0) [500|2500] "us"  PWM_NODE
 
 BO_ 192 current_telemetry: 6 PWM_NODE
  SG_ current_ch1 : 0|16@1+ (1,0) [0|65535] "mA"  LISTENER
