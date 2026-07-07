@@ -29,8 +29,8 @@
     - Add RTC and versioning CAN messages.
 - **Modifications:**
     - Improve docs.
-    - Fix bad link in `CHANGELOG.md` for `v0.1.0`.
-    - Update `can_driver` submodule `v0.3.0`.
+    - Fix bad link in `CHANGELOG.md` for v0.1.0.
+    - Update `can_driver` submodule v0.3.0.
     - Update `can_pwm_node.dbc` for new auto-generated standard.
     - Update `can_pwm_node.dbc` for specific transmitter and receiver nodes.
 - **Deletions:**
@@ -42,21 +42,17 @@
 
 ## [v0.3.2 (2026-06-23)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.3.2)
 
-- **Modifications:**
-    - Update DBC for new current sense design/features.
-    - Update `can_driver` submodule `v0.3.5`.
-    - Update `state` message to include an 8-bit MCU core temperature value.
-- **Deletions:**
-    - Remove comment line in `can_pwm_node.dbc` causing DBC merge script issues.
+- Update DBC for new current sense design/features.
+- Update `can_driver` submodule v0.3.5.
+- Update `state` message to include an 8-bit MCU core temperature value.
+- Remove comment line in `can_pwm_node.dbc` causing DBC merge script issues.
 
 ---
 
 ## [v0.4.0 (2026-07-07)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.4.0)
 
-- **Modifications:**
-    - Update DBC for new muxed signals.
-        - Update `can_driver` for tagged version v0.4.0 for muxed signal
-          support.
-        - Update DBC code generation.
-    - Redesign DBC for simplified control scheme and general cleanup.
-    - Cleanup `CHANGELOG.md` for formatting and syntax consistency.
+- Update DBC for new muxed signals.
+    - Update `can_driver` for tagged version v0.4.0 for muxed signal support.
+    - Update DBC code generation.
+- Redesign DBC for simplified control scheme and general cleanup.
+- Cleanup `CHANGELOG.md` for formatting and syntax consistency.
