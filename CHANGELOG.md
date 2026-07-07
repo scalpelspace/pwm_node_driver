@@ -10,6 +10,7 @@
   * [v0.1.0 (2025-01-13)](#v010--2025-01-13-)
   * [v0.2.1 (2026-03-10)](#v021--2026-03-10-)
   * [v0.3.2 (2026-06-23)](#v032--2026-06-23-)
+  * [v0.4.0 (2026-07-07)](#v040--2026-07-07-)
 <!-- TOC -->
 
 </details>
@@ -30,10 +31,8 @@
     - Improve docs.
     - Fix bad link in `CHANGELOG.md` for `v0.1.0`.
     - Update `can_driver` submodule `v0.3.0`.
-    - Update [can_pwm_node.dbc](can_pwm_node.dbc) for new auto-generated
-      standard.
-    - Update [can_pwm_node.dbc](can_pwm_node.dbc) for specific transmitter and
-      receiver nodes.
+    - Update `can_pwm_node.dbc` for new auto-generated standard.
+    - Update `can_pwm_node.dbc` for specific transmitter and receiver nodes.
 - **Deletions:**
     - Remove outdated script that was previously relocated to `can_driver`
       submodule.
@@ -48,5 +47,16 @@
     - Update `can_driver` submodule `v0.3.5`.
     - Update `state` message to include an 8-bit MCU core temperature value.
 - **Deletions:**
-    - Remove comment line in [can_pwm_node.dbc](can_pwm_node.dbc) causing DBC
-      merge script issues.
+    - Remove comment line in `can_pwm_node.dbc` causing DBC merge script issues.
+
+---
+
+## [v0.4.0 (2026-07-07)](https://github.com/scalpelspace/pwm_node_driver/releases/tag/v0.4.0)
+
+- **Modifications:**
+    - Update DBC for new muxed signals.
+        - Update `can_driver` for tagged version v0.4.0 for muxed signal
+          support.
+        - Update DBC code generation.
+    - Redesign DBC for simplified control scheme and general cleanup.
+    - Cleanup `CHANGELOG.md` for formatting and syntax consistency.
